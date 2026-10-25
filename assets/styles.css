@@ -14,3 +14,12 @@ p{color:#c0d3e1} .shell{padding-left:var(--edge);padding-right:var(--edge)}.eyeb
 @media(max-width:1380px){.nav .identity img{width:84px}.nav .brand strong{font-size:1.38rem}.nav .brand small{font-size:.55rem}.links{gap:11px}.links .nav-cta{padding:12px}}
 @media(max-width:1120px){.header{height:90px}.menu{display:block}.links{display:none;position:absolute;top:90px;left:0;right:0;background:#061725;flex-direction:column;align-items:flex-start;padding:18px var(--edge);gap:14px}.links.open{display:flex}.services-hero{grid-template-columns:1fr;gap:20px;padding-top:28px;padding-bottom:28px}.services-lead{max-width:680px}.mosaic{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:none}.service-card:nth-child(n){grid-column:auto;aspect-ratio:2/1}.power-hero{grid-template-columns:1fr}.proof{grid-template-columns:repeat(3,1fr);gap:10px}.proof-item:nth-child(4){border:0}}
 @media(max-width:720px){.header{height:78px}.nav .identity img{width:58px}.nav .brand strong{font-size:1rem}.nav .brand small{font-size:.39rem}.links{top:78px}.hero{min-height:650px}.hero{background-position:center,62% 20%}.hero-main{padding-top:125px}.proof{grid-template-columns:1fr 1fr}.proof-item{padding:5px;border:0}.proof-item>b{font-size:1.5rem}.mosaic{grid-template-columns:1fr 1fr}.service-card:nth-child(n){aspect-ratio:1.4/1}.power-images,.about-strip,.area,.foot-cols,.detail-grid,.systems-grid,.about-page,.contact-layout{grid-template-columns:1fr}.services-hero{padding-left:18px;padding-right:18px}.power-lead{padding:32px 18px}.power-image{min-height:250px}.about-strip,.area{gap:20px;padding-top:38px;padding-bottom:38px}.cta{display:block}.cta .btn{margin-top:14px}.footer .brand strong{font-size:1rem}.form-panel form{grid-template-columns:1fr}}
+
+/* Consistent technical imagery and improved keyboard interaction — power HD 2026-10-25 */
+.power-image img,.systems-card>img{object-position:center center}
+.systems-card>img{aspect-ratio:16/9;object-fit:cover;display:block;width:100%}
+.power-image{min-height:300px}
+.image-note{grid-column:1/-1;padding:10px var(--edge) 14px;margin:0;font-size:.76rem;color:#a8bed0;background:#061725}
+.independence{font-size:.87rem;color:#b6cbd9;line-height:1.65}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #66c8ff;outline-offset:3px}
+@media(max-width:720px){.power-image{min-height:265px}.image-note{padding:12px 18px}.systems-card>img{aspect-ratio:16/10}}
