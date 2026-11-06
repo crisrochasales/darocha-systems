@@ -25,3 +25,14 @@ document.querySelector('#quote-form')?.addEventListener('submit', function (e) {
     '&body=' +
     encodeURIComponent(body);
 });
+
+// Pré-selecionar a área aeronáutica quando o pedido vem da página Aircraft.
+const selectedService = new URLSearchParams(window.location.search).get('service');
+
+if (selectedService === 'aircraft') {
+  const serviceField = document.querySelector('#quote-form select[name="service"]');
+  const typeField = document.querySelector('#quote-form select[name="project_type"]');
+
+  if (serviceField) serviceField.value = 'Aircraft Electrical & Avionics Troubleshooting';
+  if (typeField) typeField.value = 'Aircraft — Electrical / Avionics';
+}

@@ -1543,3 +1543,416 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     transition: none;
   }
 }
+
+/* Aircraft Troubleshooting: atividade distinta dos serviços marítimos */
+.aviation-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+  align-items: center;
+  gap: clamp(30px, 5vw, 80px);
+  padding-top: clamp(62px, 7vw, 105px);
+  padding-bottom: clamp(62px, 7vw, 105px);
+  background: linear-gradient(125deg, #102f45, #081c2b 68%);
+  border-top: 1px solid #285471;
+}
+
+.aviation-feature-copy h2 {
+  max-width: 780px;
+  font-size: clamp(2rem, 3.2vw, 3.25rem);
+}
+
+.aviation-feature-copy > p:not(.eyebrow) {
+  max-width: 700px;
+  line-height: 1.75;
+}
+
+.aviation-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 26px 0;
+}
+
+.aviation-tags span {
+  padding: 9px 13px;
+  border: 1px solid #41738e;
+  border-radius: 4px;
+  background: rgba(38, 110, 151, .18);
+  color: #d7effc;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .03em;
+}
+
+.aviation-feature-copy .aviation-feature-note {
+  max-width: 550px;
+  margin: 17px 0 0;
+  font-size: .76rem;
+  color: #bad2e0;
+}
+
+.aviation-diagram,
+.aircraft-signal-board {
+  position: relative;
+  padding: clamp(24px, 4vw, 48px);
+  border: 1px solid #3e718d;
+  border-radius: 12px;
+  background:
+    linear-gradient(90deg, rgba(51, 186, 255, .055) 1px, transparent 1px),
+    linear-gradient(rgba(51, 186, 255, .055) 1px, transparent 1px),
+    #071a2b;
+  background-size: 28px 28px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .18);
+}
+
+.diagram-overline,
+.signal-board-label {
+  display: block;
+  margin-bottom: 22px;
+  color: #71cfff;
+  font-size: .73rem;
+  font-weight: 800;
+  letter-spacing: .11em;
+}
+
+.diagram-line,
+.signal-track {
+  display: flex;
+  align-items: flex-start;
+  gap: 21px;
+  padding: 19px 0;
+  border-top: 1px solid #345a70;
+}
+
+.diagram-line > span,
+.signal-track > span {
+  color: #73d2fb;
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.diagram-line strong,
+.signal-track strong {
+  display: block;
+  color: #f2f9ff;
+  font-size: 1rem;
+}
+
+.diagram-line small,
+.signal-track small {
+  display: block;
+  margin-top: 6px;
+  color: #b8d0e0;
+  line-height: 1.45;
+}
+
+.diagram-footer,
+.signal-board-footer {
+  display: block;
+  margin-top: 22px;
+  color: #8bb5cb;
+  font-size: .66rem;
+  letter-spacing: .15em;
+}
+
+/* Página dedicada a Aircraft Electrical & Avionics Troubleshooting */
+.aircraft-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+  align-items: center;
+  gap: clamp(36px, 5vw, 95px);
+  padding-top: clamp(175px, 15vw, 230px);
+  padding-bottom: clamp(80px, 8vw, 120px);
+  background: radial-gradient(circle at 82% 12%, #173d58 0, #071c2d 57%, #051320 100%);
+}
+
+.aircraft-hero h1 {
+  max-width: 850px;
+  font-size: clamp(2.6rem, 4.5vw, 5.1rem);
+}
+
+.aircraft-hero .intro {
+  max-width: 760px;
+  margin-top: 24px;
+  line-height: 1.7;
+}
+
+.aircraft-hero .actions {
+  margin-top: 30px;
+}
+
+.aircraft-hero-caveat {
+  max-width: 630px;
+  margin-top: 20px;
+  font-size: .81rem;
+  line-height: 1.6;
+}
+
+.aircraft-signal-board {
+  display: block;
+}
+
+.signal-track {
+  display: grid;
+  grid-template-columns: 35px 1fr;
+  gap: 0 14px;
+}
+
+.signal-track > span {
+  grid-row: span 2;
+}
+
+.signal-track small {
+  grid-column: 2;
+}
+
+.aircraft-capabilities {
+  padding-top: clamp(68px, 7vw, 105px);
+  padding-bottom: clamp(68px, 7vw, 105px);
+  background: #eef4f7;
+  color: #092032;
+}
+
+.aircraft-capabilities .eyebrow {
+  color: #096f9e;
+}
+
+.aircraft-capabilities .section-intro > p {
+  color: #506777;
+}
+
+.aircraft-capability-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 17px;
+}
+
+.aircraft-capability-grid article {
+  padding: clamp(26px, 3vw, 40px);
+  border: 1px solid #cfdee7;
+  border-radius: 11px;
+  background: #fff;
+}
+
+.aircraft-capability-grid .technology-index {
+  margin-bottom: 18px;
+  color: #096b9c;
+}
+
+.aircraft-capability-grid h3 {
+  margin-bottom: 12px;
+  font-size: 1.3rem;
+}
+
+.aircraft-capability-grid p {
+  margin: 0;
+  color: #4e6879;
+  line-height: 1.75;
+}
+
+.aircraft-experience {
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: clamp(40px, 5vw, 90px);
+  padding-top: clamp(65px, 7vw, 100px);
+  padding-bottom: clamp(65px, 7vw, 100px);
+  background: #091f30;
+}
+
+.aircraft-experience h2 {
+  max-width: 690px;
+  font-size: clamp(2rem, 3vw, 3.1rem);
+}
+
+.aircraft-experience p {
+  max-width: 700px;
+  line-height: 1.75;
+}
+
+.aircraft-method {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.aircraft-method li {
+  display: grid;
+  grid-template-columns: 44px 1fr;
+  gap: 13px;
+  padding: 22px 0;
+  border-top: 1px solid #36586c;
+}
+
+.aircraft-method li > span {
+  color: #75cfff;
+  font-weight: 800;
+}
+
+.aircraft-method strong {
+  font-size: 1.02rem;
+}
+
+.aircraft-method p {
+  margin: 7px 0 0;
+  font-size: .91rem;
+}
+
+.aircraft-compliance {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: clamp(30px, 5vw, 80px);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: #0c2a3e;
+  border-top: 1px solid #3d667b;
+}
+
+.aircraft-compliance p {
+  line-height: 1.72;
+}
+
+.aircraft-compliance h2 {
+  max-width: 520px;
+}
+
+.aircraft-regulatory-link {
+  font-size: .83rem;
+}
+
+.aircraft-regulatory-link a {
+  color: #8ddcff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Ligação à vertente aeronáutica na página About Us */
+.about-aviation-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding-top: 46px;
+  padding-bottom: 46px;
+  background: #103448;
+}
+
+.about-aviation-link > div {
+  max-width: 850px;
+}
+
+.about-aviation-link p {
+  max-width: 770px;
+  line-height: 1.65;
+}
+
+/* Legibilidade da navegação com a nova página */
+.nav .links {
+  gap: clamp(8px, 1vw, 17px);
+}
+
+@media (max-width: 1280px) {
+  .header {
+    height: 90px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    position: absolute;
+    top: 90px;
+    right: var(--edge);
+    left: var(--edge);
+    padding: 16px;
+    background: #062037;
+    border: 1px solid #28506b;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: stretch;
+    z-index: 25;
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .links .nav-cta {
+    margin: 0;
+  }
+
+  .landing-page .hero {
+    padding-top: 90px;
+  }
+
+  .landing-page .hero::before {
+    inset: 90px 0 0;
+  }
+}
+
+@media (max-width: 920px) {
+  .aviation-feature,
+  .aircraft-hero,
+  .aircraft-experience,
+  .aircraft-compliance {
+    grid-template-columns: 1fr;
+  }
+
+  .aircraft-hero {
+    padding-top: 155px;
+  }
+
+  .aviation-diagram,
+  .aircraft-signal-board {
+    max-width: 760px;
+  }
+}
+
+@media (max-width: 720px) {
+  .header {
+    height: 78px;
+  }
+
+  .links {
+    top: 78px;
+  }
+
+  .landing-page .hero {
+    padding-top: 78px;
+  }
+
+  .landing-page .hero::before {
+    inset: 78px 0 0;
+  }
+
+  .aviation-feature {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .aircraft-hero {
+    padding-top: 130px;
+    padding-bottom: 65px;
+  }
+
+  .aircraft-hero .actions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .aircraft-capability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-aviation-link {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aviation-feature .btn {
+    transition: none;
+  }
+}
