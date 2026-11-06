@@ -1,4 +1,5 @@
 /* Cores, espaçamentos e estilos gerais */
+
 :root {
   --bg: #061725;
   --blue: #0d84d3;
@@ -32,7 +33,7 @@ a {
   text-decoration: none;
 }
 
-button,input,select,textarea {
+button, input, select, textarea {
   font: inherit;
 }
 
@@ -40,11 +41,11 @@ button {
   cursor: pointer;
 }
 
-h1,h2,h3,p {
+h1, h2, h3, p {
   margin: 0 0 14px;
 }
 
-h1,h2,h3 {
+h1, h2, h3 {
   line-height: 1.12;
   letter-spacing: -.026em;
 }
@@ -102,6 +103,7 @@ p {
 }
 
 /* Cabeçalho e menu de navegação */
+
 .header {
   position: absolute;
   inset: 0 0 auto;
@@ -165,7 +167,7 @@ p {
   white-space: nowrap;
 }
 
-.links>a.active:not(.btn),.links>a:not(.btn):hover {
+.links>a.active:not(.btn), .links>a:not(.btn):hover {
   border-bottom: 2px solid var(--cyan);
   padding-bottom: 7px;
 }
@@ -184,6 +186,7 @@ p {
 }
 
 /* Página inicial: destaque */
+
 .hero {
   position: relative;
   min-height: clamp(535px,35vw,650px);
@@ -270,6 +273,7 @@ p {
 }
 
 /* Página inicial: serviços */
+
 .services-hero {
   background: #eef3f7;
   color: #071523;
@@ -351,6 +355,7 @@ p {
 }
 
 /* Página inicial: sistemas de energia */
+
 .power-hero {
   display: grid;
   grid-template-columns: 39% 61%;
@@ -373,54 +378,8 @@ p {
   font-size: .92rem;
 }
 
-.power-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.power-image {
-  min-height: 284px;
-  position: relative;
-  overflow: hidden;
-}
-
-.power-image img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  inset: 0;
-  object-fit: cover;
-  object-position: center 20%;
-}
-
-.power-image::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(0deg,#04131ff5,transparent 75%);
-}
-
-.power-image>span {
-  position: absolute;
-  inset: auto 0 0;
-  z-index: 1;
-  padding: 22px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.power-image strong {
-  font-size: 1.35rem;
-}
-
-.power-image small {
-  max-width: 300px;
-  font-size: .83rem;
-  color: #d0e0ee;
-}
-
 /* Página inicial: apresentação */
+
 .about-strip {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -440,6 +399,7 @@ p {
 }
 
 /* Área de atendimento */
+
 .area {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -458,11 +418,13 @@ p {
 }
 
 /* Depoimentos */
+
 .reviews[hidden] {
   display: none!important;
 }
 
 /* Chamada à ação */
+
 .cta {
   padding-top: 38px;
   padding-bottom: 38px;
@@ -474,6 +436,7 @@ p {
 }
 
 /* Rodapé */
+
 .footer {
   padding: 34px 0 18px;
   background: #030e19;
@@ -506,6 +469,7 @@ p {
 }
 
 /* Cabeçalho das páginas internas */
+
 .subhead {
   padding-top: 150px;
   padding-bottom: 65px;
@@ -518,6 +482,7 @@ p {
 }
 
 /* Página de serviços */
+
 .detail-grid {
   display: grid;
   grid-template-columns: repeat(3,minmax(0,1fr));
@@ -556,36 +521,8 @@ p {
   line-height: 1.5;
 }
 
-/* Página de sistemas de energia */
-.systems-grid {
-  display: grid;
-  grid-template-columns: repeat(2,minmax(0,1fr));
-  gap: 22px;
-  padding-top: 50px;
-  padding-bottom: 35px;
-}
-
-.systems-card {
-  border-radius: 12px;
-  background: #10283a;
-  overflow: hidden;
-}
-
-.systems-card>img {
-  width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-}
-
-.systems-card>div {
-  padding: 25px;
-}
-
-.independence {
-  padding-bottom: 35px;
-}
-
 /* Página sobre a empresa */
+
 .about-page {
   padding-top: 55px;
   padding-bottom: 60px;
@@ -606,6 +543,7 @@ p {
 }
 
 /* Página de contacto */
+
 .contact-layout {
   display: grid;
   grid-template-columns: 1.3fr .7fr;
@@ -615,7 +553,7 @@ p {
   scroll-margin-top: 15px;
 }
 
-.form-panel,.contact-side {
+.form-panel, .contact-side {
   background: #102b40;
   border: 1px solid #274f69;
   border-radius: 12px;
@@ -640,7 +578,7 @@ p {
   grid-column: 1/-1;
 }
 
-.form-panel input,.form-panel select,.form-panel textarea {
+.form-panel input, .form-panel select, .form-panel textarea {
   background: #051725;
   border: 1px solid #47687d;
   color: #fff;
@@ -648,7 +586,7 @@ p {
   padding: 12px;
 }
 
-.form-panel input:focus,.form-panel textarea:focus,.form-panel select:focus {
+.form-panel input:focus, .form-panel textarea:focus, .form-panel select:focus {
   outline: 2px solid #5cbcff;
 }
 
@@ -657,6 +595,7 @@ p {
 }
 
 /* Layout responsivo: ecrãs grandes */
+
 @media(max-width:1380px) {
   .nav .identity img {
     width: 84px;
@@ -676,6 +615,7 @@ p {
 }
 
 /* Layout responsivo: tablets */
+
 @media(max-width:1120px) {
   .header {
     height: 90px;
@@ -728,6 +668,7 @@ p {
 }
 
 /* Layout responsivo: telemóveis */
+
 @media(max-width:720px) {
   .header {
     height: 78px;
@@ -769,7 +710,7 @@ p {
   .service-card:nth-child(n) {
     aspect-ratio: 1.4/1;
   }
-  .power-images,.about-strip,.area,.foot-cols,.detail-grid,.systems-grid,.about-page,.contact-layout {
+  .about-strip, .area, .foot-cols, .detail-grid, .about-page, .contact-layout {
     grid-template-columns: 1fr;
   }
   .services-hero {
@@ -779,10 +720,7 @@ p {
   .power-lead {
     padding: 32px 18px;
   }
-  .power-image {
-    min-height: 250px;
-  }
-  .about-strip,.area {
+  .about-strip, .area {
     gap: 20px;
     padding-top: 38px;
     padding-bottom: 38px;
@@ -803,57 +741,17 @@ p {
 
 /* Consistent technical imagery and improved keyboard interaction — power HD 2026-10-25 */
 
-.power-image img,.systems-card>img {
-  object-position: center center;
-}
-
-.systems-card>img {
-  aspect-ratio: 16/9;
-  object-fit: cover;
-  display: block;
-  width: 100%;
-}
-
-.power-image {
-  min-height: 300px;
-}
-
-.image-note {
-  grid-column: 1/-1;
-  padding: 10px var(--edge) 14px;
-  margin: 0;
-  font-size: .76rem;
-  color: #a8bed0;
-  background: #061725;
-}
-
-.independence {
-  font-size: .87rem;
-  color: #b6cbd9;
-  line-height: 1.65;
-}
-
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible {
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible {
   outline: 3px solid #66c8ff;
   outline-offset: 3px;
 }
 
 /* Layout responsivo: telemóveis */
-@media(max-width:720px) {
-  .power-image {
-    min-height: 265px;
-  }
-  .image-note {
-    padding: 12px 18px;
-  }
-  .systems-card>img {
-    aspect-ratio: 16/10;
-  }
-}
-
-/* Manufacturer cards: official photographs only, pending usage authorization */
 
 /* Sistemas de energia: layout refinado */
+
+/* Componentes dos fabricantes: fotografias fornecidas para o website */
+
 .power-hero--refined {
   grid-template-columns: 37% 63%;
 }
@@ -874,31 +772,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   border-radius: 10px;
   overflow: hidden;
   min-width: 0;
-}
-
-.manufacturer-photo-pending {
-  aspect-ratio: 16/9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  text-align: center;
-  padding: 18px;
-  background: linear-gradient(145deg,#102d44,#061725);
-  border-bottom: 1px solid #35526a;
-}
-
-.manufacturer-photo-pending>span {
-  font-weight: 700;
-  color: #a9cde3;
-  letter-spacing: .06em;
-  font-size: clamp(.7rem,.9vw,.9rem);
-}
-
-.manufacturer-photo-pending>small {
-  color: #8bacbe;
-  font-size: .75rem;
 }
 
 .manufacturer-card h3 {
@@ -932,10 +805,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   padding-bottom: 64px;
 }
 
-.manufacturer-page .manufacturer-photo-pending {
-  aspect-ratio: 16/8;
-}
-
 .manufacturer-page .manufacturer-copy {
   max-width: 1000px;
   margin: 0 auto;
@@ -948,6 +817,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 }
 
 /* Layout responsivo: tablets */
+
 @media(max-width:1120px) {
   .power-hero--refined {
     grid-template-columns: 1fr;
@@ -964,14 +834,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
   .manufacturer-page {
     padding-top: 28px;
   }
-  .manufacturer-page .manufacturer-photo-pending {
-    aspect-ratio: 16/9;
-  }
 }
 
 /* Supplied brand-equipment photographs: preserve source label details and aspect */
 
 /* Fotografias dos equipamentos de fabricantes */
+
 .manufacturer-product-photo {
   display: block;
   width: 100%;

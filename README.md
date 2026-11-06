@@ -18,11 +18,10 @@ O projeto utiliza HTML, CSS e JavaScript simples, sem dependências de compilaç
 | `about.html` | Apresentação da empresa |
 | `projects.html` | Projetos e conteúdos de portefólio |
 | `contact.html` | Contactos e formulário para preparar email de orçamento |
-| `image-check-hd20261025.html` | Verificação visual das imagens HD |
 | `assets/styles.css` | Estilos gerais, componentes, páginas e regras responsivas |
 | `assets/site.js` | Menu móvel e preparação do pedido de orçamento por email |
 | `assets/*.webp` | Imagens locais |
-| `docs/` | Notas técnicas e documentação do projeto |
+| `docs/power-systems-review.md` | Orientações de imagens, revisão e publicação dos sistemas de energia |
 
 ### Convenções
 
@@ -32,3 +31,11 @@ O projeto utiliza HTML, CSS e JavaScript simples, sem dependências de compilaç
 - Preservar os links relativos e nomes existentes dos recursos.
 - O formulário abre a aplicação de email do visitante; não existe envio por servidor.
 - A branch de trabalho ligada à pré-visualização da Hostinger é `development/site-refinement-v3`. Não publicar ou integrar na `main` sem aprovação explícita.
+
+## Limpeza de imagens e ficheiros
+
+Os recursos `assets/*.webp` mantidos são aqueles que as páginas HTML ou a folha de estilos utilizam. O banner `assets/hero.webp` é carregado pelo CSS.
+
+Foram removidas cópias de imagens com nomes alternativos, imagens antigas que já não aparecem no site, uma página auxiliar de verificação e um checklist histórico desatualizado. Se for necessário recuperar algum desses recursos, o histórico de commits do GitHub conserva as versões anteriores.
+
+Antes de publicar novas alterações, confirmar as imagens, a navegação e o formulário em `/preview-darocha/`.
