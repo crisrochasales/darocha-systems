@@ -658,6 +658,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* Landing page: sistema visual premium orientado à engenharia */
+
 :root {
   --surface-technical: #0a2234;
   --surface-border: #315268;
@@ -806,6 +807,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* Elementos partilhados pelas secções modernas */
+
 .section-intro {
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(250px, .8fr);
@@ -850,6 +852,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* Troubleshooting como principal diferencial */
+
 .diagnostics-section {
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
@@ -908,6 +911,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* Cartões de serviços */
+
 .services-section {
   padding-top: clamp(62px, 7vw, 105px);
   padding-bottom: clamp(62px, 7vw, 105px);
@@ -915,15 +919,11 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   color: var(--text-dark);
 }
 
-.services-section .eyebrow,
-.expertise-section .eyebrow,
-.power-technology-page .manufacturer-page .eyebrow {
+.services-section .eyebrow, .expertise-section .eyebrow, .power-technology-page .manufacturer-page .eyebrow {
   color: #096f9e;
 }
 
-.services-section p,
-.expertise-section p,
-.power-technology-page .manufacturer-page p {
+.services-section p, .expertise-section p, .power-technology-page .manufacturer-page p {
   color: #4b6071;
 }
 
@@ -1024,6 +1024,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* Equipamentos de alta tecnologia */
+
 .technology-section {
   padding-top: clamp(64px, 7vw, 106px);
   padding-bottom: clamp(64px, 7vw, 106px);
@@ -1124,6 +1125,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* Experiência e formação na página inicial */
+
 .expertise-section {
   display: grid;
   grid-template-columns: minmax(0, 1.02fr) minmax(0, .98fr);
@@ -1187,6 +1189,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* Diferenciais e filosofia de trabalho */
+
 .principles-section {
   padding-top: clamp(58px, 7vw, 92px);
   padding-bottom: clamp(58px, 7vw, 92px);
@@ -1227,8 +1230,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* About Us: percurso, formação e metodologia */
-.about-subhead,
-.systems-subhead {
+
+.about-subhead, .systems-subhead {
   background: radial-gradient(circle at 82% 14%, #174460, #061725 66%);
 }
 
@@ -1341,6 +1344,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* Power Systems: categorias, troubleshooting e equipamento real */
+
 .power-technology-page .technology-section--inner {
   background: #0b2638;
 }
@@ -1404,12 +1408,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   text-align: left;
 }
 
-.power-technology-page .manufacturer-copy .manufacturer-disclaimer,
-.power-technology-page .manufacturer-copy .manufacturer-photo-note {
+.power-technology-page .manufacturer-copy .manufacturer-disclaimer, .power-technology-page .manufacturer-copy .manufacturer-photo-note {
   color: #526c7d;
 }
 
 /* Responsividade da nova landing page e páginas técnicas */
+
 @media (max-width: 1120px) {
   .landing-page .hero {
     padding-top: 90px;
@@ -1446,11 +1450,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .technology-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .diagnostics-section,
-  .expertise-section,
-  .technology-footer,
-  .method-section,
-  .systems-diagnostics {
+  .diagnostics-section, .expertise-section, .technology-footer, .method-section, .systems-diagnostics {
     grid-template-columns: 1fr;
   }
   .expertise-panel {
@@ -1493,12 +1493,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .landing-page .proof-item > b {
     font-size: 1.3rem;
   }
-  .section-intro,
-  .background-grid,
-  .service-grid,
-  .technology-grid,
-  .principles-grid,
-  .equipment-examples {
+  .section-intro, .background-grid, .service-grid, .technology-grid, .principles-grid, .equipment-examples {
     grid-template-columns: 1fr;
   }
   .service-tile--featured {
@@ -1528,8 +1523,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .about-intro img {
     max-height: none;
   }
-  .background-section,
-  .method-section {
+  .background-section, .method-section {
     padding-top: 52px;
     padding-bottom: 52px;
   }
@@ -1545,67 +1539,19 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* Aircraft Troubleshooting: atividade distinta dos serviços marítimos */
-.aviation-feature {
-  display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
-  align-items: center;
-  gap: clamp(30px, 5vw, 80px);
-  padding-top: clamp(62px, 7vw, 105px);
-  padding-bottom: clamp(62px, 7vw, 105px);
-  background: linear-gradient(125deg, #102f45, #081c2b 68%);
-  border-top: 1px solid #285471;
-}
 
-.aviation-feature-copy h2 {
-  max-width: 780px;
-  font-size: clamp(2rem, 3.2vw, 3.25rem);
-}
-
-.aviation-feature-copy > p:not(.eyebrow) {
-  max-width: 700px;
-  line-height: 1.75;
-}
-
-.aviation-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin: 26px 0;
-}
-
-.aviation-tags span {
-  padding: 9px 13px;
-  border: 1px solid #41738e;
-  border-radius: 4px;
-  background: rgba(38, 110, 151, .18);
-  color: #d7effc;
-  font-size: .75rem;
-  font-weight: 700;
-  letter-spacing: .03em;
-}
-
-.aviation-feature-copy .aviation-feature-note {
-  max-width: 550px;
-  margin: 17px 0 0;
-  font-size: .76rem;
-  color: #bad2e0;
-}
-
-.aviation-diagram,
 .aircraft-signal-board {
   position: relative;
   padding: clamp(24px, 4vw, 48px);
   border: 1px solid #3e718d;
   border-radius: 12px;
-  background:
-    linear-gradient(90deg, rgba(51, 186, 255, .055) 1px, transparent 1px),
+  background: linear-gradient(90deg, rgba(51, 186, 255, .055) 1px, transparent 1px),
     linear-gradient(rgba(51, 186, 255, .055) 1px, transparent 1px),
     #071a2b;
   background-size: 28px 28px;
   box-shadow: 0 20px 50px rgba(0, 0, 0, .18);
 }
 
-.diagram-overline,
 .signal-board-label {
   display: block;
   margin-bottom: 22px;
@@ -1615,7 +1561,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   letter-spacing: .11em;
 }
 
-.diagram-line,
 .signal-track {
   display: flex;
   align-items: flex-start;
@@ -1624,21 +1569,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   border-top: 1px solid #345a70;
 }
 
-.diagram-line > span,
 .signal-track > span {
   color: #73d2fb;
   font-weight: 800;
   font-size: 1.05rem;
 }
 
-.diagram-line strong,
 .signal-track strong {
   display: block;
   color: #f2f9ff;
   font-size: 1rem;
 }
 
-.diagram-line small,
 .signal-track small {
   display: block;
   margin-top: 6px;
@@ -1646,7 +1588,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   line-height: 1.45;
 }
 
-.diagram-footer,
 .signal-board-footer {
   display: block;
   margin-top: 22px;
@@ -1656,6 +1597,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* Página dedicada a Aircraft Electrical & Avionics Troubleshooting */
+
 .aircraft-hero {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
@@ -1826,26 +1768,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 }
 
 /* Ligação à vertente aeronáutica na página About Us */
-.about-aviation-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
-  padding-top: 46px;
-  padding-bottom: 46px;
-  background: #103448;
-}
-
-.about-aviation-link > div {
-  max-width: 850px;
-}
-
-.about-aviation-link p {
-  max-width: 770px;
-  line-height: 1.65;
-}
 
 /* Legibilidade da navegação com a nova página */
+
 .nav .links {
   gap: clamp(8px, 1vw, 17px);
 }
@@ -1854,11 +1779,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .header {
     height: 90px;
   }
-
   .menu {
     display: block;
   }
-
   .links {
     display: none;
     position: absolute;
@@ -1873,37 +1796,27 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     align-items: stretch;
     z-index: 25;
   }
-
   .links.open {
     display: flex;
   }
-
   .links .nav-cta {
     margin: 0;
   }
-
   .landing-page .hero {
     padding-top: 90px;
   }
-
   .landing-page .hero::before {
     inset: 90px 0 0;
   }
 }
 
 @media (max-width: 920px) {
-  .aviation-feature,
-  .aircraft-hero,
-  .aircraft-experience,
-  .aircraft-compliance {
+  .aircraft-hero, .aircraft-experience, .aircraft-compliance {
     grid-template-columns: 1fr;
   }
-
   .aircraft-hero {
     padding-top: 155px;
   }
-
-  .aviation-diagram,
   .aircraft-signal-board {
     max-width: 760px;
   }
@@ -1913,46 +1826,223 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   .header {
     height: 78px;
   }
-
   .links {
     top: 78px;
   }
-
   .landing-page .hero {
     padding-top: 78px;
   }
-
   .landing-page .hero::before {
     inset: 78px 0 0;
   }
-
-  .aviation-feature {
-    padding-top: 55px;
-    padding-bottom: 55px;
-  }
-
   .aircraft-hero {
     padding-top: 130px;
     padding-bottom: 65px;
   }
-
   .aircraft-hero .actions {
     display: flex;
     flex-wrap: wrap;
   }
-
   .aircraft-capability-grid {
     grid-template-columns: 1fr;
   }
+}
 
-  .about-aviation-link {
+/* Cabeçalho fixo com ligação exclusiva para a landing page aeronáutica */
+:root {
+  --site-header-height: 108px;
+}
+
+html {
+  scroll-padding-top: calc(var(--site-header-height) + 18px);
+}
+
+.header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 100;
+  width: 100%;
+  height: var(--site-header-height);
+  background: rgba(4, 21, 35, .97);
+  border-bottom: 1px solid rgba(87, 148, 181, .28);
+  box-shadow: 0 8px 28px rgba(1, 12, 21, .25);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.nav {
+  gap: clamp(12px, 1.4vw, 28px);
+}
+
+.nav .identity {
+  flex: 0 0 auto;
+}
+
+.nav .links {
+  flex: 0 0 auto;
+  gap: clamp(9px, .9vw, 17px);
+  font-size: .8rem;
+}
+
+.aviation-entry {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 12px;
+  margin: 0 auto;
+  padding: 11px 16px;
+  border: 1px solid #3a6a84;
+  border-radius: 9px;
+  background: linear-gradient(125deg, #10344b, #082235);
+  color: #eaf8ff;
+  white-space: nowrap;
+  transition: border-color .18s ease, background-color .18s ease;
+}
+
+.aviation-entry:hover,
+.aviation-entry[aria-current="page"] {
+  border-color: #75d3fb;
+  background: #153e56;
+}
+
+.aviation-entry-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #476f87;
+  border-radius: 50%;
+  color: #83d9ff;
+  font-size: 1.12rem;
+}
+
+.aviation-entry-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  line-height: 1.2;
+}
+
+.aviation-entry-copy small {
+  color: #92cde9;
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .095em;
+}
+
+.aviation-entry-copy strong {
+  color: #fff;
+  font-size: .85rem;
+  font-weight: 800;
+  letter-spacing: .035em;
+}
+
+.aviation-entry-copy strong span {
+  margin-left: 5px;
+  color: #7bd4fc;
+}
+
+.links .aircraft-menu-link {
+  display: none;
+}
+
+/* Em ecrãs intermédios, a navegação fica recolhida mas o acesso aeronáutico mantém-se ao centro */
+@media (max-width: 1580px) {
+  :root {
+    --site-header-height: 90px;
+  }
+
+  .menu {
+    display: block;
+    flex-shrink: 0;
+    margin-left: auto;
+  }
+
+  .nav .links {
+    display: none;
+    position: absolute;
+    top: var(--site-header-height);
+    left: var(--edge);
+    right: var(--edge);
+    z-index: 110;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
+    gap: 15px;
+    padding: 18px;
+    border: 1px solid #315b72;
+    border-radius: 0 0 10px 10px;
+    background: #061e31;
+    box-shadow: 0 18px 32px rgba(0, 0, 0, .3);
+  }
+
+  .nav .links.open {
+    display: flex;
+  }
+
+  .nav .links .nav-cta {
+    margin-left: 0;
+  }
+
+  .landing-page .hero {
+    padding-top: var(--site-header-height);
+  }
+
+  .landing-page .hero::before {
+    inset: var(--site-header-height) 0 0;
+  }
+}
+
+/* Em telemóveis, a ligação aeronáutica passa para dentro do menu */
+@media (max-width: 900px) {
+  .aviation-entry {
+    display: none;
+  }
+
+  .nav .links .aircraft-menu-link {
+    display: block;
+    padding-top: 12px;
+    border-top: 1px solid #34586e;
+    color: #8ed9ff;
+    font-weight: 800;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    --site-header-height: 78px;
+  }
+
+  .nav .links {
+    top: var(--site-header-height);
+  }
+
+  .landing-page .hero {
+    padding-top: var(--site-header-height);
+  }
+
+  .landing-page .hero::before {
+    inset: var(--site-header-height) 0 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .nav .identity {
+    gap: 7px;
+  }
+
+  .nav .brand strong {
+    font-size: .9rem;
+  }
+
+  .nav .brand small {
+    font-size: .41rem;
+    letter-spacing: .17em;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .aviation-feature .btn {
+  .aviation-entry {
     transition: none;
   }
 }

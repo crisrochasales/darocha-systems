@@ -52,6 +52,14 @@ Antes de publicar novas alterações, confirmar as imagens, a navegação e o fo
 
 ## Aircraft Troubleshooting
 
-A experiência em sistemas elétricos e eletrónicos aeronáuticos é apresentada como uma área própria da DAROCHA SYSTEMS, separada dos serviços marítimos. A página `aircraft-troubleshooting.html` não declara licença A&P, certificação de repair station, aprovação FAA ou autoridade para aprovar retorno ao serviço. Quaisquer intervenções aeronáuticas devem respeitar os privilégios de certificação, a supervisão e as regras FAA aplicáveis.
+A experiência em sistemas elétricos e eletrónicos aeronáuticos é apresentada numa landing page própria, separada da página inicial marítima. O acesso é feito por uma ligação destacada no centro do cabeçalho fixo em desktop e pelo menu em dispositivos menores. A página `aircraft-troubleshooting.html` não declara licença A&P, certificação de repair station, aprovação FAA ou autoridade para aprovar retorno ao serviço. Quaisquer intervenções aeronáuticas devem respeitar os privilégios de certificação, a supervisão e as regras FAA aplicáveis.
 
 Não anunciar aprovação de retorno ao serviço nem manutenção independente sem confirmar primeiro as autorizações correspondentes. Referência oficial: https://www.faa.gov/mechanics/become/faq
+
+## Cabeçalho e navegação
+
+- O cabeçalho permanece fixo ao navegar ou rolar as páginas.
+- O logótipo e nome DAROCHA SYSTEMS não se repetem; a área aeronáutica aparece como um acesso dedicado.
+- No desktop, a ligação **AIRCRAFT ELECTRICAL & AVIONICS / TROUBLESHOOTING** ocupa a área central do cabeçalho; em telemóveis fica no menu.
+- A página inicial retoma a versão centrada em serviços marítimos, com a assinatura **AVIATION-INSPIRED PRECISION / Marine Electrical Expertise.** e foco em troubleshooting.
+- Os links com âncoras respeitam a altura do cabeçalho fixo.

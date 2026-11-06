@@ -3,27 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="darocha-preview-build" content="aircraft-troubleshooting-20261106-a">
+    <meta name="darocha-preview-build" content="fixed-header-aircraft-20261106-b">
     <meta name="theme-color" content="#061725">
     <meta name="description" content="Contact DAROCHA SYSTEMS about marine electrical work or aircraft electrical and avionics troubleshooting inquiries.">
     <title>Contact | DAROCHA SYSTEMS</title>
     <link rel="icon" type="image/webp" href="assets/logo-hd20261025.webp">
-    <link rel="stylesheet" href="assets/styles.css?build=aircraft-troubleshooting-20261106-a">
+    <link rel="stylesheet" href="assets/styles.css?build=fixed-header-aircraft-20261106-b">
   </head>
   <body>
     <!-- Cabeçalho e navegação -->
-    <header class="header">
+        <header class="header">
       <div class="shell nav">
-        <a class="identity" href="index.html" aria-label="DAROCHA SYSTEMS home"><img src="assets/logo-hd20261025.webp" alt="DAROCHA SYSTEMS official emblem"><span class="brand"><strong>DAROCHA <em>SYSTEMS</em></strong><small>MARINE &amp; AVIATION SYSTEMS</small></span></a>
-        <button class="menu" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">☰</button>
-        <nav id="site-nav" class="links">
-          <a  href="index.html">Home</a>
-          <a  href="services.html">Services</a>
-          <a  href="power-systems.html">Power Systems</a>
-          <a href="aircraft-troubleshooting.html">Aircraft</a>
-          <a  href="about.html">About Us</a>
-          <a  href="projects.html">Projects</a>
-          <a class="active" href="contact.html">Contact</a>
+        <a class="identity" href="index.html" aria-label="DAROCHA SYSTEMS home">
+          <img src="assets/logo-hd20261025.webp" alt="DAROCHA SYSTEMS official emblem">
+          <span class="brand"><strong>DAROCHA <em>SYSTEMS</em></strong><small>MARINE &amp; AVIATION SYSTEMS</small></span>
+        </a>
+        <!-- Acesso à landing page aeronáutica sem duplicar o logótipo -->
+        <a class="aviation-entry" href="aircraft-troubleshooting.html" aria-label="Aircraft Electrical and Avionics Troubleshooting">
+          <span class="aviation-entry-icon" aria-hidden="true">✈</span>
+          <span class="aviation-entry-copy">
+            <small>AIRCRAFT ELECTRICAL &amp; AVIONICS</small>
+            <strong>TROUBLESHOOTING <span aria-hidden="true">↗</span></strong>
+          </span>
+        </a>
+        <button class="menu" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">☰</button>
+        <nav id="site-nav" class="links" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="services.html">Services</a>
+          <a href="power-systems.html">Power Systems</a>
+          <a href="about.html">About Us</a>
+          <a href="projects.html">Projects</a>
+          <a class="active" href="contact.html" aria-current="page">Contact</a>
+          <a class="aircraft-menu-link" href="aircraft-troubleshooting.html">Aircraft Troubleshooting</a>
           <a class="btn nav-cta" href="contact.html#quote">✉ &nbsp; REQUEST A QUOTE</a>
         </nav>
       </div>
