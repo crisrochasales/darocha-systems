@@ -60,6 +60,6 @@ Não anunciar aprovação de retorno ao serviço nem manutenção independente s
 
 - O cabeçalho permanece fixo ao navegar ou rolar as páginas.
 - O logótipo e nome DAROCHA SYSTEMS não se repetem; a área aeronáutica aparece como um acesso dedicado.
-- No desktop, a ligação **AIRCRAFT ELECTRICAL & AVIONICS / TROUBLESHOOTING** ocupa a área central do cabeçalho; em telemóveis fica no menu.
+- O acesso aeronáutico usa a mesma linguagem tipográfica da marca: **AIRCRAFT** em branco, **TROUBLESHOOTING** em azul e **ELECTRICAL & AVIONICS** na linha inferior. Em desktop, fica no centro do cabeçalho; em celulares permanece visível numa segunda faixa fixa abaixo do logótipo, sem abrir o menu.
 - A página inicial retoma a versão centrada em serviços marítimos, com a assinatura **AVIATION-INSPIRED PRECISION / Marine Electrical Expertise.** e foco em troubleshooting.
-- Os links com âncoras respeitam a altura do cabeçalho fixo.
+- Os links com âncoras respeitam a altura do cabeçalho fixo, incluindo a altura extra da faixa aeronáutica no celular.

@@ -1848,13 +1848,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   }
 }
 
-/* Cabeçalho fixo com ligação exclusiva para a landing page aeronáutica */
+/* Cabeçalho fixo com assinatura tipográfica aeronáutica */
 :root {
   --site-header-height: 108px;
+  --site-header-main-height: 108px;
 }
 
 html {
-  scroll-padding-top: calc(var(--site-header-height) + 18px);
+  scroll-padding-top: calc(var(--site-header-height) + 20px);
 }
 
 .header {
@@ -1864,7 +1865,7 @@ html {
   width: 100%;
   height: var(--site-header-height);
   background: rgba(4, 21, 35, .97);
-  border-bottom: 1px solid rgba(87, 148, 181, .28);
+  border-bottom: 1px solid rgba(87, 148, 181, .30);
   box-shadow: 0 8px 28px rgba(1, 12, 21, .25);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
@@ -1884,73 +1885,85 @@ html {
   font-size: .8rem;
 }
 
+/* Tipografia da ligação Aircraft: sem logótipo duplicado ou botão pesado */
 .aviation-entry {
+  position: relative;
   display: inline-flex;
   flex: 0 0 auto;
   align-items: center;
-  gap: 12px;
-  margin: 0 auto;
-  padding: 11px 16px;
-  border: 1px solid #3a6a84;
-  border-radius: 9px;
-  background: linear-gradient(125deg, #10344b, #082235);
-  color: #eaf8ff;
-  white-space: nowrap;
-  transition: border-color .18s ease, background-color .18s ease;
-}
-
-.aviation-entry:hover,
-.aviation-entry[aria-current="page"] {
-  border-color: #75d3fb;
-  background: #153e56;
-}
-
-.aviation-entry-icon {
-  display: inline-flex;
   justify-content: center;
-  align-items: center;
-  width: 34px;
-  height: 34px;
-  border: 1px solid #476f87;
-  border-radius: 50%;
-  color: #83d9ff;
-  font-size: 1.12rem;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 10px 2px;
+  color: #f5faff;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: opacity .18s ease;
+}
+
+.aviation-entry:hover {
+  opacity: .86;
+}
+
+.aviation-entry::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: var(--cyan);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .18s ease;
+}
+
+.aviation-entry:hover::after,
+.aviation-entry[aria-current="page"]::after {
+  transform: scaleX(1);
 }
 
 .aviation-entry-copy {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  line-height: 1.2;
+  align-items: flex-start;
+  gap: 6px;
+  line-height: 1;
+}
+
+.aviation-entry-title {
+  color: #f5faff;
+  font-size: clamp(1.05rem, 1.38vw, 1.52rem);
+  font-weight: 800;
+  letter-spacing: -.045em;
+}
+
+.aviation-entry-title em {
+  color: var(--cyan);
+  font-style: normal;
+}
+
+.aviation-entry-arrow {
+  display: inline-block;
+  margin-left: 7px;
+  color: #80cef0;
+  font-size: .7em;
+  font-weight: 600;
+  vertical-align: 2px;
 }
 
 .aviation-entry-copy small {
-  color: #92cde9;
-  font-size: .62rem;
+  color: #d7e7f2;
+  font-size: clamp(.56rem, .65vw, .67rem);
   font-weight: 700;
-  letter-spacing: .095em;
+  letter-spacing: .2em;
 }
 
-.aviation-entry-copy strong {
-  color: #fff;
-  font-size: .85rem;
-  font-weight: 800;
-  letter-spacing: .035em;
-}
-
-.aviation-entry-copy strong span {
-  margin-left: 5px;
-  color: #7bd4fc;
-}
-
-.links .aircraft-menu-link {
-  display: none;
-}
-
-/* Em ecrãs intermédios, a navegação fica recolhida mas o acesso aeronáutico mantém-se ao centro */
+/* Menu recolhido quando não há espaço para logótipo, assinatura e links */
 @media (max-width: 1580px) {
   :root {
     --site-header-height: 90px;
+    --site-header-main-height: 90px;
   }
 
   .menu {
@@ -1991,26 +2004,59 @@ html {
   .landing-page .hero::before {
     inset: var(--site-header-height) 0 0;
   }
+
+  .subhead {
+    padding-top: calc(var(--site-header-height) + 50px);
+  }
 }
 
-/* Em telemóveis, a ligação aeronáutica passa para dentro do menu */
+/* Mobile: a assinatura Aircraft é uma faixa visível mesmo com o menu fechado */
 @media (max-width: 900px) {
-  .aviation-entry {
-    display: none;
-  }
-
-  .nav .links .aircraft-menu-link {
-    display: block;
-    padding-top: 12px;
-    border-top: 1px solid #34586e;
-    color: #8ed9ff;
-    font-weight: 800;
-  }
-}
-
-@media (max-width: 720px) {
   :root {
-    --site-header-height: 78px;
+    --site-header-height: 130px;
+    --site-header-main-height: 78px;
+  }
+
+  .header {
+    height: var(--site-header-height);
+  }
+
+  .nav {
+    height: var(--site-header-main-height);
+  }
+
+  .aviation-entry {
+    position: absolute;
+    top: var(--site-header-main-height);
+    left: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    height: calc(var(--site-header-height) - var(--site-header-main-height));
+    margin: 0;
+    padding: 7px var(--edge);
+    border-top: 1px solid #2d5169;
+    background: linear-gradient(90deg, #091f31, #102d41 50%, #091f31);
+    white-space: nowrap;
+  }
+
+  .aviation-entry-copy {
+    align-items: center;
+    gap: 4px;
+  }
+
+  .aviation-entry-title {
+    font-size: clamp(.94rem, 3.7vw, 1.15rem);
+    letter-spacing: -.03em;
+  }
+
+  .aviation-entry-copy small {
+    font-size: .56rem;
+    letter-spacing: .17em;
+  }
+
+  .aviation-entry::after {
+    display: none;
   }
 
   .nav .links {
@@ -2023,6 +2069,32 @@ html {
 
   .landing-page .hero::before {
     inset: var(--site-header-height) 0 0;
+  }
+
+  .subhead {
+    padding-top: calc(var(--site-header-height) + 40px);
+  }
+
+  .aircraft-hero {
+    padding-top: calc(var(--site-header-height) + 48px);
+  }
+}
+
+@media (max-width: 720px) {
+  .nav .links {
+    top: var(--site-header-height);
+  }
+
+  .landing-page .hero {
+    padding-top: var(--site-header-height);
+  }
+
+  .landing-page .hero::before {
+    inset: var(--site-header-height) 0 0;
+  }
+
+  .aircraft-hero {
+    padding-top: calc(var(--site-header-height) + 44px);
   }
 }
 
@@ -2039,10 +2111,24 @@ html {
     font-size: .41rem;
     letter-spacing: .17em;
   }
+
+  .aviation-entry-title {
+    font-size: clamp(.82rem, 3.5vw, .96rem);
+  }
+
+  .aviation-entry-copy small {
+    font-size: .52rem;
+    letter-spacing: .15em;
+  }
+
+  .aviation-entry-arrow {
+    margin-left: 4px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .aviation-entry {
+  .aviation-entry,
+  .aviation-entry::after {
     transition: none;
   }
 }
